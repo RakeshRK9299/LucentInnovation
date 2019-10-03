@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<script>
+			function testArray() {
+				
+				for (var i = 2014; i <= 2050;i++) {
+					
+					var year = i;
+					var day = new Date("January 1,"+year+" 23:15:00");
+					if(day == 'Sun Jan 01 '+year+' 23:15:00 GMT+0530 (India Standard Time)')
+					{
+						document.writeln(year);
+					}
+
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input type="submit" value="Result" onclick="testArray();">
+	</body>
+</html>
